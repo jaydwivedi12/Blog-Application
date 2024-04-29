@@ -102,6 +102,16 @@ const AuthForm = () => {
               : "Already have an account? Login"}
           </Link>
         </div>
+        <div className="w-full">
+          <Link
+            to={`?mode=${isLogin ? "signup" : "login"}`}
+            className="text-blue-500 hover:underline underline-offset-4"
+          >
+            {isLogin
+              ? "Forgot Password"
+              : ""}
+          </Link>
+        </div>
       </Form>
     </div>
   );
